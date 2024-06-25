@@ -95,3 +95,25 @@
 
 })(jQuery);
 
+
+function openVideoModal() {
+    var modal = document.getElementById('videoModal');
+    var iframe = document.getElementById('videoFrame');
+    var btn = document.querySelector('.btn-play');
+
+    // Obtener la URL del atributo data-src del botón
+    var videoSrc = btn.getAttribute('data-src');
+    iframe.src = videoSrc;
+
+    modal.classList.remove('hidden');
+}
+
+function closeVideoModal() {
+    var modal = document.getElementById('videoModal');
+    var iframe = document.getElementById('videoFrame');
+
+    // Limpiar la URL del iframe cuando se cierre el modal
+    iframe.src = '';
+
+    modal.classList.add('hidden');
+}
