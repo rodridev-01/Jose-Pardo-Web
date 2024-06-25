@@ -264,25 +264,25 @@
     <!-- Carreras End -->
     
     <!-- Contacto Start -->
-    <div id="contact" class="container mx-auto py-16">
-        <div class="text-center mb-12">
+    <div id="contact" class="container mx-auto py-8 md:py-16">
+        <div class="text-center mb-8 md:mb-12">
             <p class="text-yellow-500 uppercase font-medium">Contáctanos</p>
-            <h1 class="text-5xl font-bold">Si Tienes Alguna Pregunta, No Dudes en Contactarnos</h1>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">Si Tienes Alguna Pregunta, No Dudes en Contactarnos</h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="space-y-4">
-                <p><i class="fa fa-map-marker-alt text-yellow-500 mr-2"></i> Av. Arequipa 1234, Lima, Perú</p>
-                <p><i class="fa fa-phone-alt text-yellow-500 mr-2"></i> (01) 3304428</p>
-                <p><i class="fa fa-envelope text-yellow-500 mr-2"></i> contacto@josepardo.edu.pe</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div class="space-y-6 md:pr-8">
+                <p class="mb-6"><i class="fas fa-map-marker-alt text-yellow-500 mr-2"></i> Av. Arequipa 1234, Lima, Perú</p>
+                <p class="mb-6"><i class="fas fa-phone-alt text-yellow-500 mr-2"></i> (01) 3304428</p>
+                <p class="mb-6"><i class="fas fa-envelope text-yellow-500 mr-2"></i> contacto@josepardo.edu.pe</p>
             </div>
-            <form class="space-y-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form class="space-y-6 md:pl-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input type="text" class="p-4 rounded-lg border border-gray-300" placeholder="Nombre">
                     <input type="email" class="p-4 rounded-lg border border-gray-300" placeholder="Correo Electrónico">
                 </div>
                 <input type="text" class="w-full p-4 rounded-lg border border-gray-300" placeholder="Asunto">
                 <textarea class="w-full p-4 rounded-lg border border-gray-300" rows="6" placeholder="Mensaje"></textarea>
-                <button class="w-full py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400">Enviar Mensaje</button>
+                <button type="submit" class="w-full py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400">Enviar Mensaje</button>
             </form>
         </div>
     </div>
@@ -290,11 +290,47 @@
     
     <!-- Footer Start -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto text-center">
-            <p>&copy; <a href="#" class="text-yellow-500 font-bold">Jose Pardo</a>. Todos los derechos reservados.</p>
-            <p>Powered by <a href="https://github.com/rodridev-01" target="_blank" class="text-yellow-500 font-bold">winton</a></p>
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <img src="img/logo.png" alt="Jose Pardo" class="h-8 mr-2">
+                </div>
+                <p class="text-gray-400 w-44">El instituto de educación superior tecnológico público "JOSÉ PARDO", Alma Mater de la educación tecnológica del Perú, ha contribuido al desarrollo del país formando profesionales técnicos de alto nivel durante sus 150 años de existencia.</p>
+            </div>
+            
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+                <h3 class="text-yellow-500 font-bold mb-3">Enlaces útiles</h3>
+                <ul class="text-gray-400">
+                    <li><a href="#inicio" class="hover:text-yellow-500">Inicio</a></li>
+                    <li><a href="#service" class="hover:text-yellow-500">Servicios</a></li>
+                    <li><a href="#about" class="hover:text-yellow-500">Nosotros</a></li>
+                    <li><a href="#carrera" class="hover:text-yellow-500">Carreras</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+                <h3 class="text-yellow-500 font-bold mb-3">Contacto</h3>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt"></i> Av. Arequipa 1234, Lima, Perú</p>
+                <p class="text-gray-400"><i class="fas fa-phone-alt"></i> (01) 3304428</p>
+                <p class="text-gray-400"><i class="fas fa-envelope"></i> contacto@josepardo.edu.pe</p>
+            </div>
+            
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6 md:mb-0">
+                <h3 class="text-yellow-500 font-bold mb-3">Síguenos</h3>
+                <div class="flex">
+                    <a href="https://www.facebook.com/JosePardo.Oficial/?locale=fr_CA" target="_blank" class="text-gray-400 hover:text-yellow-500 mr-4"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/instituto_jose_pardo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 border-t border-gray-800 pt-4 text-center">
+            <p class="text-gray-400">&copy; 2024 Jose Pardo. Todos los derechos reservados.</p>
+            <p class="text-gray-400">Powered by <a href="https://github.com/rodridev-01" target="_blank" class="text-yellow-500 font-bold hover:underline">winton</a></p>
         </div>
     </footer>
+    
     <!-- Footer End -->
 
     <script>
